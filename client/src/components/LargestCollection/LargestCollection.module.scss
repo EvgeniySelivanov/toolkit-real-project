@@ -1,35 +1,46 @@
-.collectionBtn{
+section{
+  min-width: 350px;
+  width: 100%;
+  max-width: 850px;
+}
+.collectionBtn {
+  min-width: 350px;
+  width: 100%;
   max-width: 850px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  background: linear-gradient(0deg,rgba(0,0,0,.04),rgba(0,0,0,.04)),#FFFFFF;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
+    #ffffff;
   border-radius: 16px;
   margin: -30px auto 80px auto;
 }
-.textBlock{
+.textBlock {
   margin-bottom: 40px;
 }
-.title{
+.title {
   text-align: center;
-  font-size:1.75rem;
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-family: "Product Sans",sans-serif;
+  margin-bottom: 0.5rem;
+  font-family: 'Product Sans', sans-serif;
 }
-p{
+p {
+  text-align: center;
   color: #727272;
   margin: 20px auto auto;
-  max-width: 800px;
+    max-width: 800px;
   font-size: 16px;
-  font-family: "Product Sans",sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
+  font-family: 'Product Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
-.button, .buttonActive{
+.button,
+.buttonActive {
+  min-width: 283px;
   width: 33.33%;
   text-align: center;
   border-radius: 16px;
@@ -37,15 +48,22 @@ p{
   font-weight: 400;
   padding: 13px 0;
   cursor: pointer;
-  font-family: "Product Sans",sans-serif;
+  font-family: 'Product Sans', sans-serif;
   line-height: 1.5;
   border: none;
 }
-.button{
-  background: linear-gradient(0deg,rgba(0,0,0,.04),rgba(0,0,0,.04)),#FFFFFF;
+.button {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
+    #ffffff;
 }
-.buttonActive{
-  
-  background: linear-gradient(271.19deg,#307DF6 0%,#14BBBF 100%),#307FF5;
+.buttonActive {
+  background: linear-gradient(271.19deg, #307df6 0%, #14bbbf 100%), #307ff5;
   color: #fff;
 }
+@media screen and (max-width: 860px) {
+
+  .collectionBtn {
+   flex-direction: column;
+  }
+}
+
