@@ -1,0 +1,79 @@
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 40px 0;
+  color: #343434;
+  font-family: 'Product Sans', sans-serif;
+}
+.titleOpen,
+.titleClose {
+  text-align: left;
+  width: 85%;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 70px 30px 40px;
+  position: relative;
+  cursor: pointer;
+  transition: all ease 1.5s;
+  border-radius: 16px;
+  &::before {
+    width: 25px;
+    height: 25px;
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    margin: -12px 0 0 0;
+    background-position: center;
+  }
+}
+.titleOpen {
+  color: #fff;
+  &::before {
+    background-image: url('./icon-minus.svg');
+  }
+}
+.titleClose {
+  color: #000;
+  &::before {
+    background-image: url('./icon-plus.svg');
+  }
+}
+.open {
+  width: 100%;
+  background-color: #307df7;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  color: white;
+}
+
+.close {
+  transition: 1s;
+
+  display: none;
+}
+.openParagraph {
+  transition: 1s;
+  background-color: #307df7;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  padding: 20px 70px 30px 40px;
+  color: white;
+  p {
+    text-align: left;
+    color: white;
+    margin: 20px auto auto;
+    max-width: 800px;
+    font-size: 16px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+}

@@ -8,7 +8,7 @@ const LargestCollection = () => {
   const btnMap=(elem, i) => <button key={i} className={elem.isPush ? styles.buttonActive : styles.button} onClick={handleClick}>{elem.title}</button>
 
   const handleClick = ({ target: { innerText } }) => {
-    setStateBtn(btnState.map((elem, i) => {
+    setStateBtn(btnState.map((elem) => {
       return {
         ...elem,
         isPush: (innerText === elem.title ? true : false)

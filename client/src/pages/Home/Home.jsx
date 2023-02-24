@@ -10,6 +10,7 @@ import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import LargestCollection from '../../components/LargestCollection/LargestCollection';
+import FAQ from '../../components/FAQ/FAQ';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -65,6 +66,7 @@ const Home = props => {
             </div>
                 <LargestCollection/>
                <HomeWhySquadhelp/>
+               <FAQ/>
             <div className={styles.greyContainer}>
               <div className={styles.adv}>
                 <div className={styles.images}>
