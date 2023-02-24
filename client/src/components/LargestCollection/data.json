@@ -1,0 +1,17 @@
+{
+  "articles" : [
+  {
+  "title": "Top Categories",
+  "isPush": true
+
+},
+{
+  "title": "Top Industry",
+  "isPush": false
+},
+{
+  "title": "Top Ideas",
+  "isPush": false
+}
+]
+}
