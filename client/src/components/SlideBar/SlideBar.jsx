@@ -1,6 +1,6 @@
 import React from 'react';
 import Flickity from 'react-flickity-component';
-import style from './SlideBar.module.sass';
+import style from './SlideBar.module.scss';
 import carouselConstants from '../../carouselConstants';
 import './flickity.css';
 
@@ -60,9 +60,11 @@ const SliderBar = props => {
     }
   };
   return (
-    <Flickity className={getStyleName()} elementType='div' options={options}>
-      {renderSlides()}
-    </Flickity>
+    <div className={style.greyContainer}>
+      <Flickity className={getStyleName()} elementType='div' options={options}>
+        {renderSlides()}
+      </Flickity>
+    </div>
   );
 };
 

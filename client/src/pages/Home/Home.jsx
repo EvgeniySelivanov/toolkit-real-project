@@ -39,12 +39,12 @@ const Home = props => {
         <>
           <div className={styles.container}>
             <FindPerfectName styleName={styleName} index={index} />
-            <div className={styles.greyContainer}>
+           
               <SlideBar
                 images={carouselConstants.mainSliderImages}
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
-            </div>
+           
             <LargestCollection />
             <HomeWhySquadhelp />
             <FAQ />
