@@ -11,6 +11,7 @@ import Spinner from '../../components/Spinner/Spinner';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import LargestCollection from '../../components/LargestCollection/LargestCollection';
 import FAQ from '../../components/FAQ/FAQ';
+import HowDoNameContestWork from '../../components/HowDoNameContestWork/HowDoNameContestWork';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -115,7 +116,8 @@ const Home = props => {
                 </div>
               </div>
             </div>
-            <h2>How Do Name Contest Work?</h2>
+            
+            {/* <h2>How Do Name Contest Work?</h2>
             <div className={styles.whiteContainer}>
               <div className={styles.stepReverse}>
                 <div>
@@ -140,7 +142,9 @@ const Home = props => {
                   alt='compressed'
                 />
               </div>
-            </div>
+            </div> */}
+ <HowDoNameContestWork/>
+            
             <div className={styles.greenContainer}>
               <div className={styles.step}>
                 <img
