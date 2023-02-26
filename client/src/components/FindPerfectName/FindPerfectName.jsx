@@ -1,10 +1,21 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import CONSTANTS from '../../constants';
 import DashboardBtn from '../DashboardBtn/DashboardBtn';
 import styles from './FindPerfectName.module.scss';
 
 const FindPerfectName = (props) => {
-  const {styleName,index}=props;
+  const [index, setIndex] = useState(0);
+  const [styleName, setStyle] = useState(styles.headline__static);
+  useEffect(() => {
+    const timeout = setInterval(() => {
+      setIndex(index + 1);
+      setStyle(styles.headline__isloading);
+    }, 3000);
+    return () => {
+      setStyle(styles.headline__static);
+      clearInterval(timeout);
+    };
+  });
   const text =
     CONSTANTS.HEADER_ANIMATION_TEXT[
     index % CONSTANTS.HEADER_ANIMATION_TEXT.length

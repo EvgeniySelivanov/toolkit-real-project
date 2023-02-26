@@ -1,6 +1,6 @@
 import React from 'react';
 import CONSTANTS from '../../constants';
-import styles from './StepOne.module.sass';
+import styles from './StepOne.module.scss';
 const StepOne = () => {
   return (<>
     <h2>How Do Name Contest Work?</h2>

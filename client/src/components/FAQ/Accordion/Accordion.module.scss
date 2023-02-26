@@ -12,7 +12,7 @@ h1 {
   width: 85%;
   font-size: 20px;
   font-weight: 700;
-  padding: 30px 70px 30px 40px;
+  padding: 30px 20px 30px 40px;
   position: relative;
   cursor: pointer;
   transition: all ease 1.5s;
@@ -25,7 +25,7 @@ h1 {
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    right: 0px;
+    right: -30px;
     margin: -12px 0 0 0;
     background-position: center;
   }
@@ -54,7 +54,6 @@ h1 {
 
 .close {
   transition: 1s;
-
   display: none;
 }
 .openParagraph {
@@ -70,6 +69,8 @@ h1 {
     text-align: left;
     color: white;
     margin: 20px auto auto;
+    min-width: 285px;
+    width: 100%;
     max-width: 800px;
     font-size: 16px;
     font-family: "Product Sans", sans-serif;
