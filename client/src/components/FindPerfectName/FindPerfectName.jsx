@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import CONSTANTS from '../../constants';
 import DashboardBtn from '../DashboardBtn/DashboardBtn';
-import styles from './FindPerfectName.module.sass';
+import styles from './FindPerfectName.module.scss';
 
 const FindPerfectName = (props) => {
   const {styleName,index}=props;

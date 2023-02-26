@@ -1,0 +1,14 @@
+@import '../../common/extends.scss';
+@import '../../common/mixins.scss';
+
+.blueContainer{
+  @extend %blueContainer;
+}
+
+.whiteUnderline{
+  @include underline;
+
+  &:after{
+    background: white;}
+    }
+  

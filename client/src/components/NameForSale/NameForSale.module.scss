@@ -1,0 +1,21 @@
+@import '../../common/extends.scss';
+@import '../../common/mixins.scss';
+.headerBar {
+  @extend %headerBar;
+}
+
+.blueUnderline {
+  @include underline;
+
+  &:after {
+    background: #455a89;
+  }
+}
+
+// .blueContainer {
+//   @extend %blueContainer;
+
+//   h2 {
+//     margin-bottom: 40px;
+//   }
+// }

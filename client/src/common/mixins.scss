@@ -13,6 +13,7 @@
   }
 
   p {
+    text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -34,5 +35,28 @@
   @media screen and (max-width: 1024px) {
     margin: 90px 0 30px 0;
     padding: 0 80px;
+  }
+}
+
+@mixin innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0 30px 0;
+}
+
+@mixin underline {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100px;
   }
 }
