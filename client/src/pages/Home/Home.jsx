@@ -14,6 +14,8 @@ import FAQ from '../../components/FAQ/FAQ';
 import HowDoNameContestWork from '../../components/HowDoNameContestWork/HowDoNameContestWork';
 import FindPerfectName from '../../components/FindPerfectName/FindPerfectName';
 import AdvertisingSection from '../../components/AdvertisingSection/AdvertisingSection';
+import DashboardBtn from '../../components/DashboardBtn/DashboardBtn';
+import IdeaStart from '../../components/IdeaStart/IdeaStart';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -44,30 +46,8 @@ const Home = props => {
             <FAQ />
             <AdvertisingSection />
             <HowDoNameContestWork />
+            <IdeaStart />
 
-            <div className={styles.greenContainer}>
-              <div className={styles.step}>
-                <img
-                  src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/2-compressed-new.gif`}
-                  alt='compressed'
-                />
-                <div className={styles.greenStep}>
-                  <h3>Step 2: Ideas start pouring in within minutes</h3>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      100s of naming experts start submitting name ideas
-                    </span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      Names automatically checked for URL availability
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
 
             <div className={styles.greyContainer}>
               <div className={styles.stepReverse}>
@@ -109,12 +89,7 @@ const Home = props => {
             </div>
 
             <SlideBar images={carouselConstants.exampleSliderImages} carouselType={carouselConstants.EXAMPLE_SLIDER} />
-           
-            <div className={styles.button}>
-              <Link className={styles.button__link} to='/dashboard'>
-                DASHBOARD
-              </Link>
-            </div>
+            <DashboardBtn />
 
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>

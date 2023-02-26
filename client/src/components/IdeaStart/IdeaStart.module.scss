@@ -1,6 +1,17 @@
 @import '../../common/extends.scss';
-.greyContainer {
-  @extend %grey-container;
+
+@mixin innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0 30px 0;
+}
+
+.greenContainer {
+  @include innerContainer;
+  background-color: #28d2d0;
 }
 
 @mixin stepCard {
