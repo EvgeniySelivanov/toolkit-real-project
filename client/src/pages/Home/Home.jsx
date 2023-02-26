@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Header from '../../components/Header/Header';
 import CONSTANTS from '../../constants';
@@ -11,11 +10,13 @@ import Spinner from '../../components/Spinner/Spinner';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import LargestCollection from '../../components/LargestCollection/LargestCollection';
 import FAQ from '../../components/FAQ/FAQ';
-import HowDoNameContestWork from '../../components/HowDoNameContestWork/HowDoNameContestWork';
+
 import FindPerfectName from '../../components/FindPerfectName/FindPerfectName';
 import AdvertisingSection from '../../components/AdvertisingSection/AdvertisingSection';
 import DashboardBtn from '../../components/DashboardBtn/DashboardBtn';
-import IdeaStart from '../../components/IdeaStart/IdeaStart';
+import StepTwo from '../../components/StepTwo/StepTwo';
+import StepOne from '../../components/StepOne/StepOne';
+import StepThree from '../../components/StepThree/StepThree';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -45,38 +46,9 @@ const Home = props => {
             <HomeWhySquadhelp />
             <FAQ />
             <AdvertisingSection />
-            <HowDoNameContestWork />
-            <IdeaStart />
-
-
-            <div className={styles.greyContainer}>
-              <div className={styles.stepReverse}>
-                <div>
-                  <h3>Step 3: Rate Entries & Brainstorm with Creatives</h3>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>Provide instant feedback on Names</span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      Send private feedback or public messages to all creatives
-                    </span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      The more entries you rate - the submissions get better and
-                      better
-                    </span>
-                  </p>
-                </div>
-                <img
-                  src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/3-compressed.gif`}
-                  alt='compressed'
-                />
-              </div>
-            </div>
+            <StepOne />
+            <StepTwo />
+            <StepThree />
 
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>

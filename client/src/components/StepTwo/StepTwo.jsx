@@ -1,7 +1,7 @@
 import React from 'react';
 import CONSTANTS from '../../constants'; 
-import styles from './IdeaStart.module.scss';
-const IdeaStart = () => {
+import styles from './StepTwo.module.scss';
+const StepTwo = () => {
   return (
     <div className={styles.greenContainer}>
     <div className={styles.step}>
@@ -29,4 +29,4 @@ const IdeaStart = () => {
   );
 }
 
-export default IdeaStart;
+export default StepTwo;

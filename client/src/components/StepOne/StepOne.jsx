@@ -1,7 +1,7 @@
 import React from 'react';
 import CONSTANTS from '../../constants';
-import styles from './HowDoNameContestWork.module.sass';
-const HowDoNameContestWork = () => {
+import styles from './StepOne.module.sass';
+const StepOne = () => {
   return (<>
     <h2>How Do Name Contest Work?</h2>
     <div className={styles.whiteContainer}>
@@ -33,4 +33,4 @@ const HowDoNameContestWork = () => {
   );
 }
 
-export default HowDoNameContestWork;
+export default StepOne;
