@@ -28,9 +28,7 @@ const Home = props => {
       clearInterval(timeout);
     };
   });
-
   const { isFetching } = props;
-
   return (
     <>
       <Header />
@@ -40,13 +38,11 @@ const Home = props => {
         <>
           <div className={styles.container}>
             <FindPerfectName styleName={styleName} index={index} />
-            <SlideBar images={carouselConstants.mainSliderImages} carouselType={carouselConstants.MAIN_SLIDER}/>
+            <SlideBar images={carouselConstants.mainSliderImages} carouselType={carouselConstants.MAIN_SLIDER} />
             <LargestCollection />
             <HomeWhySquadhelp />
             <FAQ />
-            
-            <AdvertisingSection/>
-
+            <AdvertisingSection />
             <HowDoNameContestWork />
 
             <div className={styles.greenContainer}>
@@ -72,9 +68,6 @@ const Home = props => {
                 </div>
               </div>
             </div>
-            
-
-
 
             <div className={styles.greyContainer}>
               <div className={styles.stepReverse}>
@@ -104,6 +97,7 @@ const Home = props => {
                 />
               </div>
             </div>
+
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
               <p className={styles.blueUnderline}>
@@ -113,12 +107,15 @@ const Home = props => {
                 Logo design
               </p>
             </div>
-            <SlideBar images={carouselConstants.exampleSliderImages} carouselType={carouselConstants.EXAMPLE_SLIDER}/>
+
+            <SlideBar images={carouselConstants.exampleSliderImages} carouselType={carouselConstants.EXAMPLE_SLIDER} />
+           
             <div className={styles.button}>
               <Link className={styles.button__link} to='/dashboard'>
                 DASHBOARD
               </Link>
             </div>
+
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>
               <SlideBar

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CONSTANTS from '../../constants';
+import DashboardBtn from '../DashboardBtn/DashboardBtn';
 import styles from './FindPerfectName.module.sass';
 
 const FindPerfectName = (props) => {
@@ -23,11 +24,8 @@ const FindPerfectName = (props) => {
                 explore our hand-picked collection of premium names available
                 for immediate purchase
               </p>
-              <div className={styles.button}>
-                <Link className={styles.button__link} to='/dashboard'>
-                  DASHBOARD
-                </Link>
-              </div>
+           
+              <DashboardBtn/>
             </div>
     </>
   );
