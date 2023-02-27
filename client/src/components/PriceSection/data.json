@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "title": "bronze",
+    "subTitle": "Branding on a budget",
+    "price": {
+      "currency": "US$",
+      "amount": 299
+    },
+    "optionsBefore": [
+      {
+        "content": "Prize to Winner - $135 (Included)",
+        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
+      }
+     
+   
+    ],
+    "optionsMedium":[
+      {
+        "content": "Validation Services & Upgrades ($39 value)",
+        "tooltip": "Our agency-style validation features and upgrades provide all the tools you need to complete a successful branding project, start to finish, and select a name with confidence."
+      }
+    ],
+    "items": [
+     
+
+      {
+        "item": "Matching .com URL",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      }
+     
+    ],
+    "optionsAfter": [
+      {
+        "content": "Expected 300+ Entries",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "gold",
+    "subTitle": "Increase participation and basic brand validation",
+    "price": {
+      "currency": "US$",
+      "amount": 449
+    },
+    "optionsBefore": [
+      {
+        "content": "Prize to Winner - $200 (Included)",
+        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
+      }
+     
+    ],
+    "optionsMedium":[
+      {
+        "content": "Validation Services & Upgrades ($305 value)",
+        "tooltip": "Our agency-style validation features and upgrades provide all the tools you need to complete a successful branding project, start to finish, and select a name with confidence."
+      }],
+    "items": [
+      {
+        "item": "Matching .com URL",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "Instant Trademark Check (One Database)",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "NDA and More Privacy",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "Project Promotion (Basic)",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": " Comprehensive Trademark Research (1 Name)",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      }
+    ],
+    "optionsAfter": [
+      {
+        "content": "Expected 600+ Entries",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      },
+      {
+        "content": "Partial Refund Option",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "platinum",
+    "subTitle": "Work with top-level creatives, plus agency-style brand validation",
+    "price": {
+      "currency": "US$",
+      "amount": 749
+    },
+    "optionsBefore": [
+      {
+        "content": "Prize to Winner - $300 (Included)",
+        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
+      }
+     
+    ],
+    "optionsMedium":[
+      {
+        "content": "Validation Services & Upgrades ($979 value)",
+        "tooltip": "Our agency-style validation features and upgrades provide all the tools you need to complete a successful branding project, start to finish, and select a name with confidence."
+      }],
+    "items": [
+      {
+        "item": "Audience Testing (Up to 6 Names) View Sample Report",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "Linguistics Analysis (3 Names)",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "Tier A Creatives",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": " Matching .com URL",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "Instant Trademark Check (4 Databases)",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": " NDA and More Privacy",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": "Enhanced Project Promotion",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      },
+      {
+        "item": " Team Collaboration Tools",
+        "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      }
+    ],
+    "optionsAfter": [
+      {
+        "content": "Expected 1000+ Entries",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      },
+      {
+        "content": "Partial Refund Option",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "managed",
+    "subTitle": "A full agency experience without the agency price tag",
+    "price": {
+      "currency": "US$",
+      "amount": 1499
+    },
+    "optionsBefore": [
+      {
+        "content": "Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project.Learn More about Managed Contest Service",
+        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
+      }
+      
+    ],
+    "optionsMedium":[{
+      "content":"Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.",
+      "tooltip": null
+    }],
+    "items": [
+      {
+        "item":"With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project",
+        "dataContent":null
+      }
+    ],
+    "optionsAfter": [
+      {
+        "content": "Learn More about Managed Contest Service",
+        "tooltip":null
+      }
+    ]
+  }
+]
