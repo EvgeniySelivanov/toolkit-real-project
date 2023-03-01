@@ -1,0 +1,12 @@
+.pricelist{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width:760px){
+  .priceList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

@@ -23,7 +23,6 @@
     ],
     "items": [
      
-
       {
         "item": "Matching .com URL",
         "dataContent": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
@@ -155,6 +154,9 @@
       }
     ]
   },
+
+
+
   {
     "id": 4,
     "title": "managed",
@@ -165,18 +167,17 @@
     },
     "optionsBefore": [
       {
-        "content": "Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project.Learn More about Managed Contest Service",
-        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
-      }
-      
+        "content": "Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project.Learn More about Managed Contest Service"
+        
+      }     
     ],
     "optionsMedium":[{
-      "content":"Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.",
-      "tooltip": null
+      "content":"With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project."
+    
     }],
     "items": [
       {
-        "item":"With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project",
+        "item":null,
         "dataContent":null
       }
     ],

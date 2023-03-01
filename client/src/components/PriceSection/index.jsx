@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from './data.json';
 import PriceContent from './PriceContent';
+import styles from './PriceSection.module.scss';
 const colors = [
   { name: 'bronze', value: '#e0b48c' },
   { name: 'gold', value: '#e8b954' },
@@ -36,7 +37,7 @@ const PriceSection = () => {
   );
   return (
     <section>
-      <ul>
+      <ul className={styles.priceList}>
         {data.map(mapPriceContent)}
       </ul>
     </section>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import cx from 'classnames';
 import styles from './PriceContent.module.scss';
+import cx from 'classnames';
+import PriceContentDownParagraph from '../PriceContentDownParagraph/PriceContentDownParagraph';
+
 
 const PriceContent = (props) => {
 
@@ -21,28 +23,7 @@ const PriceContent = (props) => {
     handleClick,
   } = props;
 
-  const btnClassName = cx('button',
-    {
-      [styles.bronze]: color.name === 'bronze',
-      [styles.gold]: color.name === 'gold',
-      [styles.platinum]: color.name === 'platinum',
-      [styles.managed]: color.name === 'managed',
-    }
 
-  );
-  const titleClassName = cx('title',
-    {
-      [styles.bronzeTitle]: color.name === 'bronze',
-      [styles.goldTittle]: color.name === 'gold',
-      [styles.platinumTitle]: color.name === 'platinum',
-      [styles.managedTitle]: color.name === 'managed',
-    }
-
-  );
-
-const mainClassName=cx('main',{
-  
-})
 
   useEffect(() => {
     const handleSize = () => {
@@ -56,75 +37,89 @@ const mainClassName=cx('main',{
     };
   }, []);
 
-  const optionsMap = (item, i) => (
-    <li key={i} data-tooltip={item.tooltip} className={styles.options}>
-      {item.content}
 
-    </li>
-  );
-  const optionsMapSpecial = (item, i) => (
-    <div>
-      <li key={i} data-tooltip={item.tooltip} className={styles.options}>
-        {item.content}
-      </li>
-         {isOpen ? (<hr />) : false}
-    </div>
-  );
-  const itemMap = (item, i) => (
-    <li key={i} data-tooltip={item.dataContent} className={styles.items}>
-      <i className="fa fa-check"></i>
-      {item.item}
-    </li>
-  );
+
+  const optionsMap = (item, i) => {
+
+    const proof = /Validation Services & Upgrades/gm;
+    console.log(item.content);
+    console.log(proof.test(item.content));
+
+    if (!proof.test(item.content)) {
+      var classNameOnlyThis = cx(styles.options, styles.optionsBorder);
+    }
+    if (proof.test(item.content)) {
+      classNameOnlyThis = cx(styles.options, styles.optionsNoBorder);
+    }
+    return (<li key={i} data-tooltip={item.tooltip} className={classNameOnlyThis} >
+      {item.content}
+    </li>)
+  };
+
+  const className = cx({ [styles.itemsBorder]: isOpen });
+
+  const itemMap = (item, i) => {
+
+    if (item.item !== null) {
+      return (<li key={i} data-tooltip={item.dataContent} className={styles.items}>
+        <i className="fa fa-check"></i>
+        {item.item}</li>)
+    }
+  }
+
+    ;
 
   return (
-    <li 
-      style={{ border: '5px transparent solid', borderColor: color.value, margin:'15px' }}
+    <li
+      style={{ border: '5px transparent solid', borderColor: color.value }}
       onClick={() => handleClick(id)}
+      className={styles.cardPrice}
     >
-      <div>
-        <h2 className={titleClassName}>
+      <div className={styles.titleHD} style={{ border: '10px transparent solid', borderColor: color.value }}>
+        <h2 className={styles.title} style={{ color: color.value }}>
           {title.charAt(0).toUpperCase() + title.slice(1)}&nbsp;
-          <h3>
-            {currency}
-            {amount}
-          </h3>
+
           {!isOpen ? (
             <i className="fa fa-plus"></i>
           ) : (
             <i className="fa fa-minus"></i>
           )}
         </h2>
-        <p>{width > 760 ? subTitle : !isOpen}</p>
-
+        <p className={styles.subTitle}>{width > 760 ? subTitle : !isOpen}</p>
+        <h3 className={styles.title} style={{ color: color.value }}>
+          {currency}
+          {amount}
+        </h3>
       </div>
 
       <ul >
         {width > 760 ? optionsBefore.map(optionsMap) : isOpen && optionsBefore.map(optionsMap)}
       </ul>
-      {isOpen ? (<hr />) : false}
+
 
       <ul>
         {width > 760 ? optionsMedium.map(optionsMap) : isOpen && optionsMedium.map(optionsMap)}
       </ul>
 
-      <ul>
+      <ul className={className}>
         {width > 760 ? items.map(itemMap) : isOpen && items.map(itemMap)}
       </ul>
-      {isOpen ? (<hr />) : false}
-      <ul>
-        {width > 760 ? optionsAfter.map(optionsMapSpecial) : isOpen && optionsAfter.map(optionsMapSpecial)}
+
+      <ul >
+        {width > 760 ? optionsAfter.map(optionsMap) : isOpen && optionsAfter.map(optionsMap)}
       </ul>
-    
+
+
+
       {
         width > 760 ?
 
           (
-            <button className={btnClassName}>
+            <button className={styles.button} style={{ backgroundColor: color.value, border: `1px solid ${color.value}` }}>
               <i className="fa fa-check"></i>start
             </button>
           ) : isOpen && (
-            <button className={btnClassName}>
+            <button className={styles.button} style={{ backgroundColor: color.value, border: `1px solid ${color.value}` }}>
               <i className="fa fa-check"></i>start
             </button>
           )}

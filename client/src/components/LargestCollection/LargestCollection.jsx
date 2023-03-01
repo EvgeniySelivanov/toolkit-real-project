@@ -17,7 +17,7 @@ const LargestCollection = () => {
     ));
   }
   return (
-    <section>
+    <section className={styles.section}>
       <div className={styles.textBlock}>
         <h3 className={styles.title}>Largest Collection of Brandable Names</h3>
         <p>Explore themed brand name collections created by our experienced team of branding experts</p>

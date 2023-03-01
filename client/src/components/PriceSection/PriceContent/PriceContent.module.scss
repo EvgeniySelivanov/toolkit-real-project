@@ -1,44 +1,23 @@
-.bronzeTitle,
-.goldTittle,
-.platinumTitle,
-.managedTitle,
-.options {
-  margin-left: 8px;
+.cardPrice {
+  margin: 15px;
 }
-.bronzeTitle,
-.goldTittle,
-.platinumTitle,
-.managedTitle {
+
+.title {
   display: flex;
   flex-direction: row;
   position: relative;
   font-size: 25px;
   font-weight: 700;
   padding: 10px 0;
-  font-family: inherit;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.1;
   & > i {
     position: absolute;
     right: 10px;
   }
 }
-.bronzeTitle {
-  color: #e0b48d;
-}
-.goldTittle {
-  color: #e8b954;
-}
-.platinumTitle {
-  color: #555555;
-}
-.managedTitle {
-  color: #28d2d0;
-}
 
-.bronze,
-.gold,
-.platinum,
-.managed {
+.button {
   margin: 0 auto 20px auto;
   color: #fff;
   display: block;
@@ -46,59 +25,91 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 45px;
-
   border-radius: 5px;
 }
-.bronze {
-  border: 2px solid #e0b48d;
-  background: #e0b48d;
-}
-.gold {
-  border: 2px solid #e8b954;
-  background: #e8b954;
-}
-.platinum {
-  border: 2px solid #555555;
-  background: #555555;
-}
-.managed {
-  border: 2px solid #28d2d0;
-  background: #28d2d0;
-}
-.span {
-  position: relative;
-  margin-left: 20px;
-  &::before {
-    width: 25px;
-    height: 25px;
-    content: '';
-    display: block;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 8%;
-    left: -25px;
-    margin: -12px 0 0 0;
-    background-position: center;
-    background-image: url('./check.svg');
-  }
-}
+
 .options {
+  font-family: 'Raleway', sans-serif;
+  margin: 5px 8px 5px 8px;
   font-size: 16px;
   color: #555;
   font-weight: 500;
   padding: 13px 0;
+  padding: 7px;
 }
-hr{
-  margin-top: 20px;
-  margin-bottom: 20px;
-width: 98%;
-height: 0.5px;
+.optionsNoBorder {
+  border-bottom: none;
 }
+.optionsBorder {
+  border-bottom: 2px gray solid;
+}
+
 .items {
+  font-family: 'Raleway', sans-serif;
   margin-left: 24px;
   color: #555;
   font-weight: 500;
   padding: 13px 0;
   line-height: 2rem;
-  font-size: 13px !important;
+  font-size: 13px;
+}
+.itemsBorder {
+  border-bottom: 2px gray solid;
+  margin: 7px;
+}
+@media screen and (max-width: 760px) {
+  .titleHD {
+    border: none !important;
+  }
+}
+@media screen and (min-width: 760px) {
+  .items{
+    font-size: 16px;
+  }
+  .options{
+    font-size: 18px;
+  }
+  .subTitle {
+    color: #666;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 75px;
+    line-height: 1.42857143;
+  }
+  .titleHD {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    min-height: 222px;
+    max-height: 222px;
+    padding: 10px;
+    & > h3 {
+      position: absolute;
+      left: 130px;
+      bottom: 10px;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.42857143;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 7px 15px gray;
+    }
+  }
+
+  .title {
+    font-size: 28px;
+    i {
+      display: none;
+    }
+  }
+  .cardPrice {
+    min-width: none;
+    width: 100%;
+    max-width: 292px;
+    border: none !important;
+  }
+  .button {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
